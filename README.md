@@ -10,11 +10,22 @@ pip install lemai-sdk
 
 ## Usage
 
+For chatGPT
+
 ```python
 from lemai_sdk import AIClient
 
 client = AIClient(provider="openai", api_key="your_openai_key")
 response = client.chat("Tell me a joke")
+print(response)
+```
+For Gemini
+
+```
+from lemai_sdk import AIClient
+
+client = AIClient(provider="gemini", api_key="your_gemini_api_key_here")
+response = client.chat("Explain relativity in simple terms.")
 print(response)
 ```
 
